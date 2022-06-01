@@ -7,7 +7,7 @@ export class TarefaConcluidaDirective implements OnInit {
 
   @Input() tarefaConcluida: boolean;
 
-  constructor(private el?: ElementRef) { }
+  constructor(private el: ElementRef) { }
 
   ngOnInit(): void {
     if (this.tarefaConcluida) {
